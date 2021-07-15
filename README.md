@@ -17,15 +17,15 @@
 
 ### from Motor API (C++) to Golang Architecture
 
-                                           `src ( .h)` + `include ( .cpp)`
+                                        `src ( .h)` + `include ( .cpp)`
 
                                              ↗️  (reference to)
 
-`Interface file`       +      `dynamixel_sdk.h (header files)`  
+    `Interface file`       +      `dynamixel_sdk.h (header files)`  
 
-                                  ⬇️ (generate)         
+                           ⬇️ (generate)         
 
-`generated.go (package)`      ⬅️      `main.go` 
+                 `generated.go (package)`      ⬅️      `main.go` 
 
                                            (reference to)
 
