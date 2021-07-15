@@ -1,7 +1,6 @@
 # Motor control API wrapping
 
 
-
 # SWIG
 
 - Go 1.16.5
@@ -18,9 +17,9 @@
 
 ### from Motor API (C++) to Golang Architecture
 
-                                                   `src ( .h)` + `include ( .cpp)`
+                                           `src ( .h)` + `include ( .cpp)`
 
-                                                                  ↗️  (reference to)
+                                             ↗️  (reference to)
 
 `Interface file`       +      `dynamixel_sdk.h (header files)`  
 
