@@ -161,7 +161,6 @@ sudo cp -r Motor /usr/local/go/src/
 
 ```go
 // Main Code
-// read_write_main.go
 
 package main
 
