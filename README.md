@@ -1,11 +1,15 @@
 # Motor control API wrapping
+Sevor Motor(XL430-W250-T)를 Golang으로 제어하기 위해 Robotis에서 제공하는 c++ 라이브러리를 SWIG를 통해 Golang으로 랩핑함
+
 - Go 1.16.5
 - SWIG 4.1.0
 - Ubuntu 18.04
+  
 
 ### SWIG installation
 
 [https://blog.naver.com/chandong83/221130068042](https://blog.naver.com/chandong83/221130068042)
+
 
 # How to Call Motor API to Golang
 
@@ -26,8 +30,6 @@
                                            (reference to)
 
 ### 1. Compile C++ src
-
-[DynamixelSDK.zip](Motor%20control%20API%20wrapping%2070c75e701f5148239cfafb21273f63b8/DynamixelSDK.zip)
 
 - C++ 헤더 코드들을 먼저 컴파일 → 컴파일된 헤더들을 참조하는 방식
 - 소스 파일들을 수정하였기에 아래 방법으로 빌드:
@@ -133,7 +135,7 @@ C++ 헤더들을 swig의 interface file을 통해 link시켜 Go package를 생�
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ```bash
-cd $GOPATH/src/Motor/
+cd $GOPATH/pkg/Motor/
 
 swig -go -cgo -c++ -intgosize 64 Motor.i
 
