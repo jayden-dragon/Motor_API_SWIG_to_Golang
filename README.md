@@ -1,8 +1,4 @@
 # Motor control API wrapping
-
-
-# SWIG
-
 - Go 1.16.5
 - SWIG 4.1.0
 - Ubuntu 18.04
